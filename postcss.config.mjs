@@ -1,6 +1,6 @@
 /** @type {import('postcss-load-config').Config} */
 const config = {
-  basePath:'/',
+  basePath:'/inisiasi-bumi',
   exported:true,
   plugins: {
     tailwindcss: {},
