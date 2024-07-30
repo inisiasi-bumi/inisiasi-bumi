@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
+import logo from "../../public/logo.png";
 
 export function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
@@ -18,7 +19,7 @@ export function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
                 <Image
-                  src="/logo.png"
+                  src={logo.src}
                   alt="N"
                   width="32"
                   height="32"
@@ -42,7 +43,7 @@ export function Footer() {
                 className="relative block w-44"
               >
                 <Image
-                  src="/logo.png"
+                  src={logo.src}
                   alt="Powered by Vercel"
                   width="212"
                   height="44"

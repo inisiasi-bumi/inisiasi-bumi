@@ -3,6 +3,8 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
+import logo from "../../public/logo.png";
+
 
 export const Navbar = () => {
   const navigation = [
@@ -22,7 +24,7 @@ export const Navbar = () => {
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       <Image
-                        src="/logo.png"
+                        src={logo.src}
                         alt="N"
                         width="65"
                         height="65"
